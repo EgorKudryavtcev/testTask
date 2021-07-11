@@ -1,0 +1,128 @@
+.container {
+    width: 100%;
+    margin: 30px 0;
+}
+.row {
+    width: 100%;
+}
+
+.col-12 {
+    width: 100%;
+}
+.tables-list {
+    padding: 10px 80px;
+    border: 1px solid black;
+    display: inline-block;
+    box-shadow: 0 0 10px black;
+    margin: 10px auto;
+}
+table.color-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    border-top: 3px solid grey;
+}
+table.color-table th {
+    border: 1px solid grey;
+    padding: 10px 15px;
+}
+table.color-table td {
+    border: 1px solid grey;
+    padding: 10px 15px;
+}
+table.color-table caption {
+    font-size: 18px;
+    font-weight: bold;
+}
+table.color-table td:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #4264fd;
+}
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    display: none;
+}
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.close:hover { background: #00d9ff; }
+
+.form-control {
+    padding: 15px 0;
+    width: 100%;
+}
+a.btn {
+    padding: 5px;
+    background-color: #396af6;
+    color: #fff;
+    border-radius: 15px;
+}
+.text-center {
+    text-align: center;
+}
+.mar-t-5 {
+    margin-top: 5px;
+}
+.mar-l-10 {
+    margin-left: 10px;
+}
+.icons {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+    cursor: pointer;
+}
+.icons.pen {
+    background-image: url('/img/icons/pen.png');
+}
+.icons.trash {
+    background-image: url("/img/icons/trash.png");
+}
+.icons.plus {
+    background-image: url("/img/icons/plus.png");
+}
+.icons.reset {
+    background-image: url("/img/icons/reset.png");
+}
+table.color-table .buttons-th {
+    width: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}

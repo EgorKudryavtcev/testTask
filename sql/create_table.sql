@@ -1,0 +1,33 @@
+CREATE TABLE  IF NOT EXISTS tables(
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(50) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS columns(
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(50),
+    number INT(11),
+    table_id INT(11) UNSIGNED,
+    FOREIGN KEY (table_id)
+        REFERENCES tables(id)
+        ON DELETE CASCADE
+);
+CREATE TABLE IF NOT EXISTS rows(
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    color VARCHAR(50) DEFAULT '#FFFFFF',
+    table_id INT(11) UNSIGNED,
+    FOREIGN KEY (table_id)
+        REFERENCES tables(id)
+        ON DELETE CASCADE
+);
+CREATE TABLE IF NOT EXISTS cells(
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    row_id INT(11) UNSIGNED,
+    column_id INT(11) UNSIGNED,
+    value VARCHAR(50),
+    FOREIGN KEY (row_id)
+        REFERENCES rows(id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (column_id)
+        REFERENCES columns(id)
+        ON DELETE CASCADE
+);

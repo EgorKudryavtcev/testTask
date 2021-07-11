@@ -1,0 +1,6 @@
+{
+    "dserver":"127.0.0.1",
+    "dbase":"testtask",
+    "duser":"testTask",
+    "dpass":"testTask"
+}
