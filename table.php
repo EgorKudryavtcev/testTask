@@ -4,7 +4,6 @@ $table_id = addslashes($_GET['table_id']);
 $table = get_table_by_id($table_id);
 $cells = get_cells($table_id);
 ?>
-
 <div class="container">
     <a href="/" title="Вернуться назад"><i class="icons back"></i></a>
     <table class="color-table">
