@@ -6,6 +6,7 @@ $cells = get_cells($table_id);
 ?>
 
 <div class="container">
+    <a href="/" title="Вернуться назад"><i class="icons back"></i></a>
     <table class="color-table">
         <caption>Таблица: <?php echo $table['title']?></caption>
         <tr>

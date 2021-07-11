@@ -67,6 +67,6 @@
 
     if (!function_exists('generate_color')) {
         function generate_color() {
-            return substr(md5(date('Y-m-d H:s:i')), 0, 6);
+            return substr(md5(rand(1,3) . date('Y-m-d H:s:i')), 0, 6);
         }
     }
